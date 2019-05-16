@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+
+    <!--bean的定义 id:确定唯一的bean对象，class为该bean的实现类-->
+    <bean id="student" class="pojo.Student">
+        <!--注入属性sname的值-->
+        <property name="sname" value="张三"></property>
+    </bean>
+    <bean id="teacher" class="pojo.Teacher">
+        <!--将student注入到teacher-->
+        <property name="student" ref="student"></property>
+    </bean>
+
+    <!--组件扫描配置,开启spring的组件扫描
+	 	base-package:指定扫描哪些package,多个package之间使用逗号隔开
+    -->
+    <context:component-scan base-package="pojo" />
+
+    <!--引入properties文件-->
+    <bean id="propertiesFile" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath:mysql_jdbc.properties</value>
+            </list>
+        </property>
+        <!--设置编码格式-->
+        <property name="fileEncoding" value="utf-8"/>
+    </bean>
+
+    <bean id="propertyConfigurer"
+          class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
+        <property name="properties" ref="propertiesFile" />
+    </bean>
+
+    <!--配置mysql数据源-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driverClass}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+    <!--将DataSource注入JdbcTemplate-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+</beans>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/maven-spring" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/activemq/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zookeeper-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zookeeper-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-springboot-javabasic/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicecloud-provider-8091/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicecloud-consumer-8092/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicecloud-eureka-8000/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/maven-javabasic-demo/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

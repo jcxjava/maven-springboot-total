@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jiangcx</groupId>
+    <artifactId>maven-springboot-total</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>activemq</module>
+        <module>dubbo-zookeeper-api</module>
+        <module>dubbo-zookeeper-consumer</module>
+        <module>dubbo-zookeeper-provider</module>
+        <module>maven-spring</module>
+        <module>maven-springboot</module>
+        <module>maven-springboot-javabasic</module>
+        <module>maven-springboot-mybatis</module>
+        <module>microservicecloud-api</module>
+    </modules>
+
+
+</project>

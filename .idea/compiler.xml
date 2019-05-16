@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="activemq" />
+        <module name="dubbo-zookeeper-api" />
+        <module name="dubbo-zookeeper-consumer" />
+        <module name="dubbo-zookeeper-provider" />
+        <module name="maven-spring" />
+        <module name="maven-springboot" />
+        <module name="maven-springboot-javabasic" />
+        <module name="maven-springboot-mybatis" />
+        <module name="microservicecloud-api" />
+        <module name="microservicecloud-consumer-8092" />
+        <module name="microservicecloud-eureka-8000" />
+        <module name="microservicecloud-provider-8091" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven-javabasic-demo" target="1.7" />
+      <module name="maven-springboot-resttemplate" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

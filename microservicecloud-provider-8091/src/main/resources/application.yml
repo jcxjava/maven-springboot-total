@@ -1,0 +1,19 @@
+server:
+  port: 8091
+spring:
+ profiles:
+   active: dev
+ application:
+   name: microservicecloud-provider-8091
+
+# 配置需要注册到的Eureka server地址：将当前服务注册到 http://localhost:8000/eureka
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:8000/eureka
+  instance:
+    instance-id: microservicecloud-provider-8091 # 自定义服务名称信息
+    prefer-ip-address: true # 访问路径可以显示 ip 地址
+
+
+
