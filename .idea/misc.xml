@@ -16,6 +16,8 @@
         <option value="$PROJECT_DIR$/microservicecloud-provider-8091/pom.xml" />
         <option value="$PROJECT_DIR$/microservicecloud-consumer-8092/pom.xml" />
         <option value="$PROJECT_DIR$/microservicecloud-eureka-8000/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicecloud-eureka-8001/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicecloud-eureka-8002/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

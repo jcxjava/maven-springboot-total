@@ -17,6 +17,8 @@
         <module name="microservicecloud-api" />
         <module name="microservicecloud-consumer-8092" />
         <module name="microservicecloud-eureka-8000" />
+        <module name="microservicecloud-eureka-8001" />
+        <module name="microservicecloud-eureka-8002" />
         <module name="microservicecloud-provider-8091" />
       </profile>
     </annotationProcessing>
