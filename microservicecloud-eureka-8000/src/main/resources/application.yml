@@ -1,12 +1,11 @@
-
 server:
   port: 8000
 eureka:
   instance:
-    hostname: eureka8000.com # eureka·şÎñ¶ËµÄÊµÀıÃû³Æ
+    hostname: eureka8000.com # eurekaæœåŠ¡ç«¯çš„å®ä¾‹åç§°
   client:
-    register-with-eureka: false # false±íÊ¾²»Ïò×¢²áÖĞĞÄ×¢²á×Ô¼º
-    fetch-registry: false # false±íÊ¾×Ô¼º¶Ë¾ÍÊÇ×¢²áÖĞĞÄ£¬ÎÒµÄÖ°Ôğ¾ÍÊÇÎ¬»¤·şÎñÊµÀı£¬²¢²»ĞèÒªÈ¥¼ìË÷·şÎñ
+    register-with-eureka: false # falseè¡¨ç¤ºä¸å‘æ³¨å†Œä¸­å¿ƒæ³¨å†Œè‡ªå·±
+    fetch-registry: false # falseè¡¨ç¤ºè‡ªå·±ç«¯å°±æ˜¯æ³¨å†Œä¸­å¿ƒï¼Œæˆ‘çš„èŒè´£å°±æ˜¯ç»´æŠ¤æœåŠ¡å®ä¾‹ï¼Œå¹¶ä¸éœ€è¦å»æ£€ç´¢æœåŠ¡
     service-url:
-      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # ÉèÖÃeureka½»»¥µØÖ·
-      defaultZone: http://eureka8001.com:8001/eureka/,http://eureka8002.com:8002/eureka/ # ÉèÖÃeureka½»»¥µØÖ·
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # è®¾ç½®eurekaäº¤äº’åœ°å€
+      defaultZone: http://eureka8001.com:8001/eureka/,http://eureka8002.com:8002/eureka/ # è®¾ç½®eurekaäº¤äº’åœ°å€
