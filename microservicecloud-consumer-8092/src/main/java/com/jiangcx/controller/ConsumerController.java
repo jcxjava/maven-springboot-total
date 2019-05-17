@@ -16,8 +16,10 @@ public class ConsumerController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String url = "http://localhost:8091/teacherProvider/";
-    @RequestMapping("/getInfo/{sno}")
+    //private static final String url = "http://localhost:8091/teacherProvider/";
+    //通过服务名来调用
+    private static final String url = "http://microservicecloud-provider/teacherProvider/";
+    @RequestMapping("/getInfo/{sno}") // 804、825、831、856
     public Teacher getInfo(@PathVariable String sno){
         Teacher teacher = restTemplate.getForObject(url + sno, Teacher.class);
         System.out.println("teacher:"+teacher);

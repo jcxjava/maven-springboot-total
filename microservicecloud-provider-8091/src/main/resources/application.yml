@@ -4,7 +4,7 @@ spring:
  profiles:
    active: dev
  application:
-   name: microservicecloud-provider-8091
+   name: microservicecloud-provider # 对外提供的微服务应用名，集群模式下该服务名需保持一致
 
 # 配置需要注册到的Eureka server地址：将当前服务注册到 http://localhost:8000/eureka
 eureka:

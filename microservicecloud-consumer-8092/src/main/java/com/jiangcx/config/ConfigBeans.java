@@ -9,10 +9,10 @@ import org.springframework.web.client.RestTemplate;
  * Created by jiangcx on 2019/5/15
  */
 @Configuration
-public class ConfigUtils {
+public class ConfigBeans {
 
     @Bean
-    @LoadBalanced // Ribbon 负载均衡
+    @LoadBalanced //Ribbon 负载均衡 该注解可开启ribbon的负载均衡
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
