@@ -15,6 +15,7 @@
         <module name="maven-springboot-javabasic" />
         <module name="maven-springboot-mybatis" />
         <module name="microservicecloud-api" />
+        <module name="microservicecloud-config-7777" />
         <module name="microservicecloud-consumer-8092" />
         <module name="microservicecloud-eureka-8000" />
         <module name="microservicecloud-eureka-8001" />

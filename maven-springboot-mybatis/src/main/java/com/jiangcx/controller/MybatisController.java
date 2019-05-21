@@ -32,7 +32,7 @@ public class MybatisController {
         teacher.setDepart("计算机");
         return teacher;
     }
-    @RequestMapping("getTeacher/{sno}")
+    @RequestMapping("getTeacher/{sno}") // 804、825、831、856
     public Teacher getInfo(@PathVariable String sno){
         return  teacherService.getTeacherBySno(sno);
     }

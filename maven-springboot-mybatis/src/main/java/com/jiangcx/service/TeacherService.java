@@ -8,4 +8,6 @@ import com.jiangcx.entity.Teacher;
 public interface TeacherService {
 
     Teacher getTeacherBySno(String sno);
+
+    int insert(Teacher teacher);
 }
