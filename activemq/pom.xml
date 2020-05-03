@@ -31,11 +31,13 @@
         </dependency>
 
         <!--activemq消息中间件jar包-->
+        <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-all -->
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-all</artifactId>
             <version>5.15.5</version>
         </dependency>
+
     </dependencies>
 
     <build>
